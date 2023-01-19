@@ -1,0 +1,273 @@
+:root {
+  --overlay: white;
+  --overlay-font: "Poppins", sans-serif;
+  --para-font: "Space Mono", sans-serif;
+  --heading-font: "Space Mono", monospace;
+  --accent: #e06566;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+  font-family: var(--para-font);
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.big-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin: 25px 25px;
+}
+
+.container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-image: url("https://images3.alphacoders.com/574/57477.jpg");
+  background-size: cover;
+}
+
+.overlay-text h1 {
+  font-size: 8rem;
+  text-decoration: underline;
+  font-weight: heavy;
+  font-family: var(--overlay-font);
+  color: var(--overlay);
+  position: absolute;
+  bottom: 25%;
+  padding: 5px;
+}
+
+.overlay-text p {
+  width: 75%;
+  font-size: 0.9em;
+  font-family: var(--para-font);
+  color: var(--overlay);
+  position: absolute;
+  bottom: 25%;
+  padding: 5px;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+main h2 {
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+main p {
+  font-family: var(--para-font);
+  font-size: 1em;
+  text-align: center;
+}
+
+/* about me */
+.strike {
+  text-decoration: line-through;
+}
+
+.about-links a {
+  text-decoration: underline;
+}
+
+.details-container {
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+details {
+  margin: 0 5px;
+  height: auto;
+  width: 400px;
+  font-family: var(--para-font);
+}
+
+details p {
+  text-align: left;
+  margin: 0 20px;
+  font-size: 12px;
+}
+
+/* interests images */
+.hero-section {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 30%;
+  display: inline-block; /* shrink wrap to image */
+  overflow: hidden; /* this is to keep the excess in the container. removing it means it'll zoom in and spill outside the container */
+}
+
+.box img {
+  width: 100%;
+  display: block; /* no whitespace */
+  transition: 0.3s ease-in-out;
+}
+
+
+
+.box:hover img {
+  transform: scale(1.05);
+}
+
+.styled-break {
+  width: 700px;
+  height: 1px;
+  margin: auto;
+  background-color: black;
+}
+
+footer {
+  font-family: var(--heading-font);
+  text-align: center;
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+nav a:hover, a.backtotop:hover, .social-icons a:hover, .about-links a:hover {
+  color: var(--accent);
+}
+
+.social-icons i {
+  padding: 5px 15px;
+}
+
+/* CYF Blocks CSS */
+.quotes-section button {
+  margin: 15px;
+}
+
+.quotes-section img {
+  width: 500px; 
+  height: auto;
+  margin: 20px;
+}
+.button-section {
+  display:flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.main {
+  text-align: center;
+}
+
+/* why */
+.small-text {
+  font-size: 14px;
+}
+
+.smaller-text {
+  font-size: 12px;
+}
+      
+/* Comments Section */
+
+#form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#comment-text {
+  height: auto;
+  width: 500px;
+}
+
+form div {
+  margin: 15px 0;
+}
+
+textarea, input {    
+    border-radius: 5px;
+    color: #000000;
+    border: 1px solid #dbdbdb;
+    font-size: 16px;
+  }
+
+button {
+    background-color: white;
+    border-radius: 10px;
+    color: #000000;
+    border: 1px solid #dbdbdb;
+    font-family: "Space Mono", sans-serif;
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+  
+button:hover {
+    background-color: white;
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+textarea, input,
+input::placeholder {
+    font-family: var(--para-font);
+    font-size: 14px;
+}
+
+textarea:focus, input:focus {
+  outline: 1px solid var(--accent);
+}
+
+
+/* Break lines */
+.styled-break {
+  height: 1px;
+  background-color: var(--accent);
+  margin: 30px auto;
+}
+
+
+.btt-container {
+  margin: 20px;
+  text-align: right;
+  font-size: 16px;
+}
